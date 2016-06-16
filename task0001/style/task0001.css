@@ -1,4 +1,27 @@
+
+body{ font-size:20px; line-height: 1.8em;}
+div:nth-child(2n+1) {background: #89b0e1}
+div:nth-child(2n+2) {background: #ddd}
 h1 { color: #00f; }
-h2 {  font-size:14px; }
-p {  font-size:12px; color:yellow; background:#000; }
+h2 {   }
+p { text-indent:2em; }
+p.first {  font-size:12px; color:yellow;  
+	
+	/*text-transform:capitalize;*/	
+	text-transform: uppercase;
+}
+p.decoration {}
+p.decoration-example { text-decoration: underline; }
+/*.decoration-example em { text-decoration: none; }*//*无效*/
+p.decoration-example em { text-decoration: overline; 
+	 /*text-decoration: line-through;*/
+}
+p.align{text-align:center;}
+
+p.spacing {word-spacing: 1em;}
+
+p.white{ white-space: pre-wrap; }
+
+div.height { font-size:14px;}
+
 img {  border:2px solid red; width:300px; height:200px;}

@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>task0001</title>
 	<link rel="stylesheet" type="text/css" href="./style/task0001.css" />
+
 </head>
 <body>
 	<h1>GitHub: <a href="http://github.com/liupeilink" target="_blank">liupeilink</a></h1>
@@ -11,8 +12,73 @@
 		<li><a href="./task0001.html" target="_blank">This page</a></li>
 		<li><a href="http://weibo.com/2673677393/" target="_blank">My Weibo</a></li>
 	</ul>
-	<h2>一个二级标题，内容随意（不能违法、反动、色情等）</h2>
-	<p>一个段落，内容随意（不能违法、反动、色情等）</p>
-	<img src="./images/2.jpg" alt="法拉利458" title="法拉利458" />
+	
+	<div id="content">
+		<div>
+		<h2>1. 第一个段落</h2>
+		<p class="first">一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）there comes some english words. there comes some english words. there comes some english words. there comes some english words.</p>
+		</div>
+		<div>
+		<h2>2. text-decoration</h2>
+		<p class="decoration">text-decoration: 文本修饰属性会延伸到后代元素。这意味着如果祖先元素指定了文本修饰属性，后代元素则不能将其删除。例如，在如下标记中&lt;p&gt;This text has &lt;em&gt;some emphasized words&lt;/em&gt; in it.&lt;/p&gt;，应用样式p { text-decoration: underline } 会对整个段落添加下划线，再添加样式 em { text-decoration: none } 则不会引起任何改变；整个段落仍然有下划线修饰。然而，新加样式 em { text-decoration: overline } 则会在&lt;em&gt;标记的文字上添加另一种新样式。</p>
+		<p class="decoration-example">This text has <em>some emphasized words</em> in it.</p>
+		</div>
+		<div>
+		<h2>3. text-align</h2>
+		<p class="align">text-align控制它的行内内容对齐。
+		<pre>
+			text-align: left;
+			text-align: right;
+			text-align: center;
+			text-align: justify;
+			text-align: start;//文字方向从左向右就left，反之right
+			text-align: end;
+			text-align: match-parent;//根据父元素文字方向确定，并继承
+			text-align: start end;
+			text-align: ".";
+			text-align: start ".";
+			text-align: "." end;
+			text-align: inherit;
+		</pre>
+		
+		</p>
+		</div>
+		<div>
+		<h2>4. word-spacing</h2>
+		<p class="spacing">word-spacing字符间距 value: normal 3px 1em inherit. 这有一些汉字。这有一些汉字。这有一些汉字。这有一些汉字。这有一些汉字。这有一些汉字。这有一些汉字。there comes some english words. there comes some english words. there comes some english words.
+		</p>
+		</div>
+		<div>
+		<h2>5. white-space</h2>
+		<p class="white">white-space CSS属性用来描述如何处理空格制表换行和br. 下面每个there前有一个换行+2个tab+1个空格（white-space:pre-wrap）：
+		 there comes some english words. 
+		 there comes some english words.
+		 there comes some english words. 
+		 there comes some english words.  
+		 there comes some english words.
+	nowrap；合并所有换行 空格 制表 ,	不自动换行
+	pre：保留所有换行 空格 制表 ,		不自动换行
+	pre-wrap：保留所有换行 空格 制表 ,	自动换行
+	pre-line: 保留换行 ,合并空格 制表 ,	自动换行
+
+	(遇到br都会换行)
+
+		inherit</p>
+		</div>
+		<div class="height">
+		<h2>6. line-height</h2>
+		<p >line-height被用来控制行与行之间垂直距离.</p>
+		<ol><li>line-height可以被定义为：body{line-height:normal;}</li>
+			<li>line-height可以被定义为：body{line-height:inherit;}</li>
+			<li>line-height可以使用一个百分比的值body{line-height:120%;}</li>
+			<li>line-height可以被定义为一个长度值(px,em等) body{line-height:25px;}</li>
+			<li>line-height也可以被定义为数字， body{line-height:1.2}</li>
+		</ol> 
+		<p>浏览器默认1em=16px. 当我们在body中同时设置了font-size和line-height属性时，子元素会继承这个被确定的行高。只有当body的line-height被设置为数字(<em>注意不是em</em>),才能让子元素自适应它的字体的行高(无论body中形式为px的font-size,但body中形式为em的font-size仍会影响子元素行高的自适应，所以应避免)。<a href="http://www.cnblogs.com/fengzheng126/archive/2012/05/18/2507632.html">参考这里:深入理解CSS的line-height</a></p>
+		<h1>这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签</h1>
+		<p>there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again.</p>
+		</div>
+		<img src="./images/2.jpg" alt="法拉利458" title="法拉利458" />
+		</div>
 </body>
 </html>
