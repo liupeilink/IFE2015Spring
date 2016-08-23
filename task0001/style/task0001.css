@@ -2,8 +2,10 @@
 body{ font-size:20px; line-height: 1.8em;}
 div:nth-child(2n+1) {background: #89b0e1}
 div:nth-child(2n+2) {background: #ddd}
-
-h2 {   }
+#first h1 { color:#00f; }
+#first h2 {  font-size:14px; }
+#first p { font-size:12px; color:yellow; background: black;}
+#first img { border:2px solid red; }
 p { text-indent:2em; }
 p.first {  font-size:12px; color:yellow;  
 	
