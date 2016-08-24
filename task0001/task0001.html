@@ -7,21 +7,21 @@
 
 </head>
 <body>
-<div id="first">
-	<h1>MyGithubAccountName: liupeilink</h1>
-	<ul>
-		<li><a href="./task0001.html" target="_blank">HomePage</a></li>
-		<li><a href="http://weibo.com/2673677393/" target="_blank">My Weibo</a></li>
-	</ul>
-	<h2>介绍</h2>
-	<p>欢迎来到任务一主页，这是关于百度前端学院2015夏季班的任务。</p>
-	<img src="images/1.jpg" alt="icon">
-</div>
+	<div id="first">
+		<h1>MyGithubAccountName: liupeilink</h1>
+		<ul>
+			<li><a href="./task0001.html" target="_blank">HomePage</a></li>
+			<li><a href="http://weibo.com/2673677393/" target="_blank">My Weibo</a></li>
+		</ul>
+		<h2>介绍</h2>
+		<p>欢迎来到任务一主页，这是关于百度前端学院2015夏季班的任务。</p>
+		<img src="images/1.jpg" alt="icon">
+	</div>
 	<p><a href="./task0001-6.html">两种居中（flex,负边距）</a></p>
 	<div id="content">
 		<div>
 		<h2>1. 第一个段落</h2>
-		<p class="first">一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）there comes some english words. there comes some english words. there comes some english words. there comes some english words.</p>
+		<p class="first">一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）一个段落，内容随意（不能违法、反动、色情等）There comes some English words. There comes some English words. There comes some English words. There comes some English words.</p>
 		</div>
 		<div>
 		<h2>2. text-decoration</h2>
@@ -32,25 +32,31 @@
 		<h2>3. text-align</h2>
 		<p class="align">text-align控制它的行内内容对齐。
 		<pre>
+			/* Keyword values */
 			text-align: left;
 			text-align: right;
 			text-align: center;
 			text-align: justify;
-			text-align: start;//文字方向从左向右就left，反之right
+			text-align: justify-all;
+			text-align: start;
 			text-align: end;
-			text-align: match-parent;//根据父元素文字方向确定，并继承
-			text-align: start end;
-			text-align: ".";
-			text-align: start ".";
-			text-align: "." end;
+			text-align: match-parent;
+
+			/* Block alignment values (Non-standard syntax) */
+			text-align: -moz-center;
+			text-align: -webkit-center;
+
+			/* Global values */
 			text-align: inherit;
+			text-align: initial;
+			text-align: unset;
 		</pre>
 		
 		</p>
 		</div>
 		<div>
 		<h2>4. word-spacing</h2>
-		<p class="spacing">word-spacing字符间距 value: normal 3px 1em inherit. 这有一些汉字。这有一些汉字。这有一些汉字。这有一些汉字。这有一些汉字。这有一些汉字。这有一些汉字。there comes some english words. there comes some english words. there comes some english words.
+		<p class="spacing">word-spacing字符间距 value: 50% normal 3px 1em inherit. 这有一些汉字。这有一些汉字。这有一些汉字。这有一些汉字。这有一些汉字。这有一些汉字。这有一些汉字。there comes some english words. there comes some english words. there comes some english words.
 		</p>
 		</div>
 		<div>
@@ -64,7 +70,7 @@
 	nowrap；合并所有换行 空格 制表 ,	不自动换行
 	pre：保留所有换行 空格 制表 ,		不自动换行
 	pre-wrap：保留所有换行 空格 制表 ,	自动换行
-	pre-line: 保留换行 ,合并空格 制表 ,	自动换行
+	pre-line: 保留换行 ,合并空格 制表 ,	自动换行(窗口装不下的时候自动换到下一行)
 
 	(遇到br都会换行)
 
@@ -79,7 +85,7 @@
 			<li>line-height可以被定义为一个长度值(px,em等) body{line-height:25px;}</li>
 			<li>line-height也可以被定义为数字， body{line-height:1.2}</li>
 		</ol> 
-		<p>浏览器默认1em=16px. 当我们在body中同时设置了font-size和line-height属性时，子元素会继承这个被确定的行高。只有当body的line-height被设置为数字(<em>注意不是em</em>),才能让子元素自适应它的字体的行高(无论body中形式为px的font-size,但body中形式为em的font-size仍会影响子元素行高的自适应，所以应避免)。<a href="http://www.cnblogs.com/fengzheng126/archive/2012/05/18/2507632.html">参考这里:深入理解CSS的line-height</a></p>
+		<p>浏览器默认1em=16px. 当我们在body中同时设置了font-size和line-height属性时，子元素会继承这个被确定的行高。只有当body的line-height被设置为数字(<em>注意不是em</em>),才能让子元素自适应它的字体的行高(无论body中形式为px的font-size)。<a href="http://www.cnblogs.com/fengzheng126/archive/2012/05/18/2507632.html">参考这里:深入理解CSS的line-height</a></p>
 		<h1>这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签这是一个h1标签</h1>
 		<p>there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again. there comes some english words again.</p>
 		</div>
