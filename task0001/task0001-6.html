@@ -4,43 +4,52 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
-		.container{
-			display:-webkit-flex;
-			display: flex;
-			
-			-webkit-align-items:center;/*垂直居中*/
-			align-items: center;
-			
-			-webkit-justify-content:center;/*水平居中*/
-			justify-content:center;
-
-			height:300px;
-			border:1px solid black;
-			position: relative;//IE负外边距法，还需要知道居中元素的高度
-			
-
-		}
-		.center{
-			width:960px;
-			height:100px;
-			background:red;
-		}
-
-		.center{
+		
+		.firstParent .center{
 			position:absolute;
-			
 			left:50%;
 			top:50%;
-			margin-left:-480px;
-			margin-top:-50px;
-			
+			-webkit-transform:translate(-50%,-50%);
+			-ms-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			transform:translate(-50%, -50%);
 		}
+
+		.container{
+			height:200px;
+			border:20px solid black;
+			/*vertical-align: middle;*/
+		}
+		.center{
+			background: red;
+			width:960px;
+		}
+		.firstParent{
+			position:relative;
+		}
+		.secondParent{
+			display: flex;
+			-webkit-justify-content: center;
+			-moz-justify-content:center;
+			-ms-justify-content: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			-moz-align-items:center;
+			justify-content: center;
+			align-items: center;
+		}
+		.secondParent .center{}
 
 	</style>
 </head>
 <body>
-	<div class="container">
+	<div class="container firstParent">
 		<div class="center">居中这个东西</div>
 	</div>
+	<div class="container secondParent">
+		<div class="center">居中这个东西</div>
+	</div>
+
 </body>
 </html>
