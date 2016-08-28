@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>两种三列布局</title>
+	<style>
+	*{margin:0; padding:0;}
+	.main {        
+           float: left;       
+           width: 100%;   
+			
+           background: pink;
+ 	}  
+ 	.main-wrap{margin:0 230px 0 190px;}
+ 	.sub {       
+           float: left;        
+           
+           width: 190px;        
+           margin-left: -100%;
+           background: yellow;
+
+           /*position: relative;        
+           left: -190px; */    
+    }   
+    
+     .extra {        
+             float: left;        
+             width: 230px;        
+             
+             background:blue;   
+             margin-left: -230px;        
+             /*position: relative;        
+             right: -230px;*/
+ 	}
+ 	#bd {        
+ 			/*position: relative;*/
+          /*padding: 0 230px 0 190px;   */
+          background: red;
+          overflow: hidden;
+          zoom:1;
+          /*min-width: 190px;*/
+ 	}
+
+ 	#bd2 .left{float:left; width:190px; background: yellow;}
+ 	#bd2 .right{float:right; width:230px; background: blue;}
+ 	#bd2 .main2{background: pink; margin-left: 190px; margin-right: 230px;}
+
+ 	</style>
+</head>
+<body>
+	<div id="page">    
+      <div id="hd"></div>    
+         <div id="bd">        
+              
+              <div class="main"><div class="main-wrap">main main main main main main main mainmain</div></div>   
+                  
+              <div class="sub">sub sub sub sub</div>        
+              <div class="extra">extra extra extra extra extra extra</div>    
+         </div>   
+      <div id="ft"></div>
+     </div>
+     <div id="page2">    
+      <div id="hd2"></div>    
+         <div id="bd2">        
+              <div class="left">sub sub sub sub</div>        
+              <div class="right">extra extra extra extra extra extra</div>   
+              <div class="main2">main2 main2 main2 main2 main2</div>          
+         </div>   
+      <div id="ft2"></div>
+     </div>
+</body>
+</html>

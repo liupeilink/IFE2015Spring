@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1-6-3</title>
+	<style>
+		.left {background: red;}
+		.right {background: blue;}
+		.footer {background: yellow;}
+		
+		@media screen and (min-width:240px){
+		#two-colume1 .left {width:200px; float:left;}
+		#two-colume1 .right {margin-left:200px; }
+		}
+		@media screen and (max-width:240px){
+		#two-colume1 .left {width:240px;}
+		#two-colume1 .right {width:240px; }	
+		#two-colume1 .footer {width:240px; }	
+		}
+		#two-colume1:after{ content:"";display: block;clear:both; }
+		#two-colume1 .footer {clear:both;}
+		/*
+		#two-colume2 .left {display:inline-block; width: 24%; vertical-align: top;}
+		#two-colume2 .right{display: inline-block; width:74%; vertical-align: top;}
+		*/
+		#two-colume2 .content {display: flex; -webkit-display:flex;}
+		#two-colume2 .left{-webkit-flex: none; flex:none; width:200px;}
+		#two-colume2 .right{-webkit-flex:1;flex:1;}
+		
+	</style>
+</head>
+<body>
+	<div id="two-colume1">
+		<div class="content">
+			<div class="left">DIV-A DIV-A DIV-A DIV-A DIV-A DIV-A DIV-A DIV-A DIV-A DIV-A</div>
+			<div class="right">DIV-B DIV-B DIV-B DIV-B DIV-B DIV-B DIV-B DIV-B DIV-B DIV-B DIV-B</div>
+		</div>
+		<div class="footer">DIV-C</div>
+	</div>
+	<div id="two-colume2">
+		<div class="content">
+			<div class="left">DIV-A this is DIV-A this is DIV-A this is DIV-A this is DIV-A this is DIV-A</div>
+			<div class="right">DIV-B this is DIV-B</div>
+		</div>
+		<div class="footer">DIV-C</div>
+	</div>
+</body>
+</html>
